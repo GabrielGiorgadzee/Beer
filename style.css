@@ -1,0 +1,320 @@
+@font-face {
+    font-family: GARayuela;
+    src: url(ფონტები/GARayuela-Regular.otf);
+  }
+
+@media (max-width: 415px) {
+    .cont:not(:first-child) {
+        overflow: hidden;
+    }
+    header .nav-ul {
+        display: none;
+    }
+    .text-cont button {
+        display: none;
+    }
+    .beer-heading {
+        display: flex;
+        flex-direction: row;
+    }
+    .beer-heading h2 {
+        font-size: 60px;
+        margin: 5px;
+        margin-top: 700px;
+        color: white;
+        margin-left: 10%;
+    }
+    .beers {
+        width: 126px;
+        height: 482px;
+    }
+    .card:nth-child(2) {
+        display: none;
+    }
+    .card:last-child {
+        display: none;
+    }
+    .card {
+        margin: 20px;
+    }
+    .map {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .mail {
+        width: auto;
+    }
+    .beers {
+        margin-left: -100%;
+        width: 200px;
+        height: 700px;
+    }
+    .input-menu button {
+        text-align: start;
+    }
+    .beer {
+        width: 35px;
+        height: 140px;
+    }
+    .burger span {
+        visibility: visible;
+        font-size: 15px;
+        color: white;
+    }
+    .burger img {
+        visibility: visible;
+    }
+    .burger {
+        background-color: #049BFF;
+        border-radius: 10px;
+        padding: 8px 15px;
+        cursor: pointer;
+        visibility: visible;
+    }
+    .mask {
+        background-color: #049BFF;
+        border-radius: 10px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    height: 3000px;
+    background-color: black;
+}
+.cont {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
+header { 
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FFCD04;
+    max-width: 1348px;
+    width: 100%;
+    height: 86px;
+    border-radius: 15px;
+    padding: 0 40px 0 50px;
+}
+.burger span {
+    font-size: 15px;
+    color: white;
+}
+.burger {
+    background-color: #049BFF;
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.logo {
+    position: absolute;
+    left: 26px;
+    bottom: 20px;
+}
+.nav-ul {
+    display: flex;
+    font-size: 20px;
+}
+.item:not(:last-child) {
+    margin-right: 20px;
+}
+.item:last-child .nav-link {
+    color: white;
+}
+.item .nav-link {
+    color: black;
+}
+.header-box {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 50px;
+    box-shadow:inset 0 -293px 43px -58px rgba(0, 0, 0, .9)
+}
+.flex-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.beer-heading {
+    font-size: 150px;
+    font-family: GARayuela;
+}
+.beers {
+    width: 383px;
+}
+.reg, .buy, .menu {
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+.menu {
+    background-color: #FFCD04;
+    display: none;
+}
+.reg {
+    background-color: white;
+}
+.buy {
+    background-color: #049BFF;
+    color: white;
+}
+.text-cont button {
+    background-color: #049BFF;
+    padding: 20px 120px;
+    font-size: 60px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.catalog-heading {
+    color: white;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.catalog-heading, .categories {
+    vertical-align: middle;
+}
+.catalog {
+    padding: 90px 0;
+}
+.catalog-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0;
+}
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 25px;
+}
+.cost {
+    width: 100%;
+    height: 40%;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #FFCD04, #FF8800);
+}
+.cost span {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left: 26px;
+    bottom: 26px;
+}
+.beer {
+    position: absolute;
+    right: 44px;
+    bottom: 26px;
+}
+.contact {
+    padding: 20px 0;
+}
+.contact-heading {
+    color: white;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.contact, .contact-heading {
+    vertical-align: middle;
+}
+.contact-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-menu button {
+    color: black;
+    background: linear-gradient(90deg, #FFCD04, #FF8800);
+    padding: 13px 17px ;
+    font-size: 33px;
+    width: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.name {
+    margin: 5px 0;
+    background-color: #292929;
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.mail {
+    margin: 5px 0;
+    width: 500px;
+    height: 90px;
+    background-color: #292929;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.mes {
+    color: grey;
+    margin: 5px 0;
+    width: 500px;
+    background-color: #292929;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.map {
+    width: 780px;
+    border-radius: 10px;
+}
+.about {
+    padding: 100px 0;
+}
+.about-heading {
+    color: white;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.about, .about-heading {
+    vertical-align: middle;
+}
+.about p{
+    color: grey;
+    font-size: 20px;
+}
+footer {
+    border-top: 2px solid #636363;
+    padding: 20px 0;
+}
+.footer-heading {
+    color: grey;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #FF8800;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFCD04;
+}

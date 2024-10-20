@@ -137,7 +137,7 @@ header {
     color: black;
 }
 .header-box {
-    background-image: url(background.jpg);
+    background-image: url(Images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
